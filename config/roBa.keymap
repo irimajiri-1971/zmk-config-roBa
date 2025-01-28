@@ -67,10 +67,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O      &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))                      &kp MINUS      &kp H        &kp J  &kp K      &kp L      &kp SLASH
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp COLON                          &kp SEMICOLON  &kp N        &kp M  &kp LC(C)  &kp PIPE2  &kp COMMA
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 7 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                               &kp DOT
+&kp Q             &kp W             &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &lt 6 I   &kp O     &kp P
+&kp A             &kp S             &kp D         &kp F                        &kp G        &kp LS(LG(S))                      &kp MINUS      &kp H        &kp J  &kp K     &kp L     &kp SLASH
+&mt LEFT_SHIFT Z  &kp X             &kp C         &kp V                        &kp B        &kp COLON                          &kp SEMICOLON  &kp N        &kp M  &mkp MB1  &mkp MB2  &kp COMMA
+&kp LCTRL         &mt ESC LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 INT_HENKAN  &lt 4 SPACE  &lt_to_layer_0 2 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                             &kp DOT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -90,7 +90,16 @@
 &kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
+&trans                      &trans           &trans           &trans           &kp SPACE     &trans                       &kp BACKSPACE   &kp ENTER                                                                  &kp PIPE
+            >;
+        };
+
+        Number {
+            bindings = <
+&kp ESC            &kp N7            &kp N8            &kp N9            &kp N0                                   &kp N7     &kp N8  &kp N9  &kp N0     &kp MINUS
+&trans             &kp N4            &kp N5            &kp N6            &kp EQUAL  &kp MINUS             &trans  &kp N4     &kp N5  &kp N6  &kp EQUAL  &to_layer_0 FSLH
+&kp N0             &kp N1            &kp N2            &kp N3            &kp DOT    &to_layer_0 FSLH      &kp N0  &kp N1     &kp N2  &kp N3  &kp DOT    &trans
+&to_layer_0 LSHFT  &to_layer_0 LALT  &to_layer_0 LGUI  &to_layer_0 DOWN  &kp SPACE  &tog 2                &trans  &kp ENTER                             &trans
             >;
         };
 
@@ -129,15 +138,6 @@
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
-            >;
-        };
-
-        layer_7 {
-            bindings = <
-&kp ESC            &kp N7            &kp N8            &kp N9            &kp N0                                   &kp N7     &kp N8  &kp N9  &kp N0     &kp MINUS
-&trans             &kp N4            &kp N5            &kp N6            &kp EQUAL  &kp MINUS             &trans  &kp N4     &kp N5  &kp N6  &kp EQUAL  &to_layer_0 FSLH
-&kp N0             &kp N1            &kp N2            &kp N3            &kp DOT    &to_layer_0 FSLH      &kp N0  &kp N1     &kp N2  &kp N3  &kp DOT    &trans
-&to_layer_0 LSHFT  &to_layer_0 LALT  &to_layer_0 LGUI  &to_layer_0 DOWN  &kp SPACE  &tog 2                &trans  &kp ENTER                             &trans
             >;
         };
     };
