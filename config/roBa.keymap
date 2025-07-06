@@ -83,10 +83,10 @@
 
         FUNCTION {
             bindings = <
-&trans        &kp N7        &kp N8        &kp N9        &trans                             &kp F1      &kp F2     &kp F3  &kp F4  &kp F5
-&trans        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans      &kp MINUS      &kp F6      &kp F7     &kp F8  &kp F9  &kp F10
-&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &kp SEMICOLON  &kp PERIOD  &kp SLASH  &trans  &trans  &kp F11
-&trans        &trans        &trans        &trans        &trans  &trans      &trans         &trans                                 &kp F12
+&trans        &kp N7        &kp N8        &kp N9        &trans                             &kp F1      &kp F2                 &kp F3  &kp F4  &kp F5
+&trans        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans      &kp MINUS      &kp F6      &kp F7                 &kp F8  &kp F9  &kp F10
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &kp SEMICOLON  &kp PERIOD  &mt LS(SLASH) AT_SIGN  &trans  &trans  &kp F11
+&trans        &trans        &trans        &trans        &trans  &trans      &trans         &trans                                             &kp F12
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>;
@@ -105,10 +105,10 @@
 
         Number {
             bindings = <
-&kp ESC  &kp N7  &kp N8  &kp N9  &kp N0                                   &kp N7  &kp N8  &kp N9  &kp N0     &kp MINUS
-&trans   &kp N4  &kp N5  &kp N6  &kp EQUAL  &kp MINUS             &trans  &kp N4  &kp N5  &kp N6  &kp EQUAL  &to_layer_0 FSLH
-&kp N0   &kp N1  &kp N2  &kp N3  &kp DOT    &to_layer_0 FSLH      &kp N0  &kp N1  &kp N2  &kp N3  &kp DOT    &trans
-&trans   &trans  &trans  &trans  &trans     &trans                &trans  &trans                             &trans
+&kp ESC    &kp N7  &kp N8  &kp N9  &kp N0                                   &kp N7  &kp N8  &kp N9  &kp N0     &kp MINUS
+&kp LSHFT  &kp N4  &kp N5  &kp N6  &kp EQUAL  &kp MINUS             &trans  &kp N4  &kp N5  &kp N6  &kp EQUAL  &to_layer_0 FSLH
+&kp N0     &kp N1  &kp N2  &kp N3  &kp DOT    &to_layer_0 FSLH      &kp N0  &kp N1  &kp N2  &kp N3  &kp DOT    &trans
+&trans     &trans  &trans  &trans  &trans     &trans                &trans  &trans                             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOLUME_DOWN>;
@@ -161,6 +161,17 @@
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+        };
+
+        layer_9 {
+            bindings = <
+&trans        &kp N7        &kp N8        &kp N9        &trans                             &kp F1      &kp F2     &kp F3  &kp F4  &kp F5
+&trans        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans      &kp MINUS      &kp F6      &kp F7     &kp F8  &kp F9  &kp F10
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &kp SEMICOLON  &kp PERIOD  &kp SLASH  &trans  &trans  &kp F11
+&trans        &trans        &trans        &trans        &trans  &trans      &trans         &trans                                 &kp F12
+            >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
     };
 };
