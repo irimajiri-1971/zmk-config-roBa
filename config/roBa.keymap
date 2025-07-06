@@ -176,10 +176,10 @@
 
         layer_10 {
             bindings = <
-&mt CAPS Q        &kp W             &kp E         &kp R             &kp T                                                       &kp Y        &kp U  &lt 6 I   &kp O     &kp P
-&kp A             &kp S             &kp D         &kp F             &kp G        &kp LS(LG(S))                   &kp MINUS      &kp H        &kp J  &kp K     &kp L     &kp SLASH
-&mt LEFT_SHIFT Z  &kp X             &kp C         &kp V             &kp B        &kp PLUS                        &kp SEMICOLON  &kp N        &kp M  &mkp MB1  &mkp MB2  &kp COMMA
-&kp LCTRL         &mt ESC LEFT_WIN  &kp LEFT_ALT  &lt 3 INT_HENKAN  &lt 4 SPACE  &lt 2 INT_KATAKANAHIRAGANA      &kp BACKSPACE  &lt 1 ENTER                             &kp DOT
+&mt ESC Q         &kp W             &kp E         &kp R             &kp T                                          &kp Y        &kp U  &lt 6 I   &kp O     &kp P
+&kp A             &kp S             &kp D         &kp F             &kp G        &kp LS(LG(S))      &kp MINUS      &kp H        &kp J  &kp K     &kp L     &kp SLASH
+&mt LEFT_SHIFT Z  &kp X             &kp C         &kp V             &kp B        &kp PLUS           &kp SEMICOLON  &kp N        &kp M  &mkp MB1  &mkp MB2  &kp COMMA
+&kp LCTRL         &mt ESC LEFT_WIN  &kp LEFT_ALT  &lt 3 INT_HENKAN  &lt 4 SPACE  &lt 2 GRAVE        &kp BACKSPACE  &lt 1 ENTER                             &kp DOT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
