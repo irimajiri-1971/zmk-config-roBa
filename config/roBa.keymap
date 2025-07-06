@@ -75,13 +75,13 @@
 &mt ESC Q         &mt CAPS W        &kp E         &kp R             &kp T                                          &kp Y        &kp U  &mt K_CALCULATOR I  &mt UP_ARROW O    &mt DEL P
 &kp A             &kp S             &kp D         &kp F             &kp G        &kp LS(LG(S))      &kp MINUS      &kp H        &kp J  &mt LEFT_ARROW K    &mt DOWN_ARROW L  &mt RIGHT_ARROW SLASH
 &mt LEFT_SHIFT Z  &kp X             &kp C         &kp V             &kp B        &kp PLUS           &kp SEMICOLON  &kp N        &kp M  &mkp MB1            &mkp MB2          &kp COMMA
-&kp LCTRL         &mt ESC LEFT_WIN  &kp LEFT_ALT  &lt 3 INT_HENKAN  &lt 4 SPACE  &lt 2 GRAVE        &kp BACKSPACE  &lt 1 ENTER                                               &kp DOT
+&kp LCTRL         &mt ESC LEFT_WIN  &kp LEFT_ALT  &lt 4 INT_HENKAN  &lt 3 SPACE  &lt 2 GRAVE        &kp BACKSPACE  &lt 1 ENTER                                               &kp DOT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
-        FUNCTION {
+        FUNCTION-1 {
             bindings = <
 &trans     &kp N7        &kp N8        &kp N9        &trans                            &kp F1   &kp F2     &kp F3  &kp F4  &kp F5
 &trans     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans         &kp MINUS  &kp F6   &kp F7     &kp F8  &kp F9  &kp F10
@@ -92,7 +92,7 @@
             sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
-        NUM {
+        NUM-2 {
             bindings = <
 &kp MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp SLASH  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
@@ -103,18 +103,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOLUME_DOWN>;
         };
 
-        Number {
-            bindings = <
-&kp ESC    &kp N7  &kp N8  &kp N9  &kp N0                                   &kp N7  &kp N8  &kp N9  &kp N0     &kp MINUS
-&kp LSHFT  &kp N4  &kp N5  &kp N6  &kp EQUAL  &kp MINUS             &trans  &kp N4  &kp N5  &kp N6  &kp EQUAL  &to_layer_0 FSLH
-&kp N0     &kp N1  &kp N2  &kp N3  &kp DOT    &to_layer_0 FSLH      &kp N0  &kp N1  &kp N2  &kp N3  &kp DOT    &trans
-&trans     &trans  &trans  &trans  &trans     &trans                &trans  &trans                             &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOLUME_DOWN>;
-        };
-
-        ARROW {
+        ARROW-3 {
             bindings = <
 &kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                          &trans  &trans  &trans  &trans  &trans
 &kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans     &trans  &trans  &trans  &trans  &trans
@@ -123,6 +112,17 @@
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+        };
+
+        Number-4 {
+            bindings = <
+&kp LC(K_CALCULATOR)  &kp N7  &kp N8  &kp N9  &kp N0                                   &kp N7  &kp N8  &kp N9  &kp N0     &kp MINUS
+&kp LSHFT             &kp N4  &kp N5  &kp N6  &kp EQUAL  &kp MINUS             &trans  &kp N4  &kp N5  &kp N6  &kp EQUAL  &to_layer_0 FSLH
+&kp N0                &kp N1  &kp N2  &kp N3  &kp DOT    &to_layer_0 FSLH      &kp N0  &kp N1  &kp N2  &kp N3  &kp DOT    &trans
+&trans                &trans  &trans  &trans  &trans     &trans                &trans  &trans                             &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOLUME_DOWN>;
         };
 
         MOUSE {
@@ -157,7 +157,7 @@
 &mt CAPS Q        &kp W             &kp E         &kp R             &kp T                                                       &kp Y        &kp U  &lt 6 I   &kp O     &kp P
 &kp A             &kp S             &kp D         &kp F             &kp G        &kp LS(LG(S))                   &kp MINUS      &kp H        &kp J  &kp K     &kp L     &kp SLASH
 &mt LEFT_SHIFT Z  &kp X             &kp C         &kp V             &kp B        &kp PLUS                        &kp SEMICOLON  &kp N        &kp M  &mkp MB1  &mkp MB2  &kp COMMA
-&kp LCTRL         &mt ESC LEFT_WIN  &kp LEFT_ALT  &lt 3 INT_HENKAN  &lt 4 SPACE  &lt 2 INT_KATAKANAHIRAGANA      &kp BACKSPACE  &lt 1 ENTER                             &kp DOT
+&kp LCTRL         &mt ESC LEFT_WIN  &kp LEFT_ALT  &lt 4 INT_HENKAN  &lt 3 SPACE  &lt 2 INT_KATAKANAHIRAGANA      &kp BACKSPACE  &lt 1 ENTER                             &kp DOT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -179,7 +179,7 @@
 &mt ESC Q         &kp W             &kp E         &kp R             &kp T                                          &kp Y        &kp U  &lt 6 I   &kp O     &kp P
 &kp A             &kp S             &kp D         &kp F             &kp G        &kp LS(LG(S))      &kp MINUS      &kp H        &kp J  &kp K     &kp L     &kp SLASH
 &mt LEFT_SHIFT Z  &kp X             &kp C         &kp V             &kp B        &kp PLUS           &kp SEMICOLON  &kp N        &kp M  &mkp MB1  &mkp MB2  &kp COMMA
-&kp LCTRL         &mt ESC LEFT_WIN  &kp LEFT_ALT  &lt 3 INT_HENKAN  &lt 4 SPACE  &lt 2 GRAVE        &kp BACKSPACE  &lt 1 ENTER                             &kp DOT
+&kp LCTRL         &mt ESC LEFT_WIN  &kp LEFT_ALT  &lt 4 INT_HENKAN  &lt 3 SPACE  &lt 2 GRAVE        &kp BACKSPACE  &lt 1 ENTER                             &kp DOT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
