@@ -109,7 +109,7 @@
             bindings = <
 &mt ESC Q         &mt CAPS L    &kp U         &kp COMMA         &kp DOT                                        &kp F        &kp W  &kp R  &kp Y  &mt DELETE P
 &kp E             &kp I         &kp A         &kp O             &kp MINUS    &kp LS(LG(S))      &kp NUMBER_1   &kp K        &kp T  &kp N  &kp S  &kp H
-&mt LEFT_SHIFT Z  &mt LG(H) X   &kp C         &kp V             &kp SLASH    &kp TAB            &kp AT_SIGN    &kp G        &kp D  &kp M  &kp J  &kp B
+&mt LEFT_SHIFT Z  &mt LG(H) X   &kp C         &kp V             &kp SLASH    &kp TAB            &kp AT         &kp G        &kp D  &kp M  &kp J  &kp B
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 4 INT_HENKAN  &lt 2 SPACE  &lt 3 GRAVE        &kp BACKSPACE  &lt 1 ENTER                       &mkp MB1
             >;
 
