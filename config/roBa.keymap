@@ -16,70 +16,7 @@
 &sl { release-after-ms = <250>; };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        BT0 {
-            bindings = <&bt BT_SEL 0>;
-            key-positions = <28 22>;
-        };
-
-        BT1 {
-            bindings = <&bt BT_SEL 1>;
-            key-positions = <28 23>;
-        };
-
-        BT2 {
-            bindings = <&bt BT_SEL 2>;
-            key-positions = <28 24>;
-        };
-
-        BT3 {
-            bindings = <&none>;
-            key-positions = <28 25>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <10 11>;
-        };
-
-        plas {
-            bindings = <&kp PLUS>;
-            key-positions = <27 26>;
-        };
-    };
-
-    macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
-        };
-
-        mkp_exit_AML: mkp_exit_AML {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_press>,
-                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
-                <&macro_tap>,
-                <&sl 0>;
-
-            label = "MKP_EXIT_AML";
-        };
-
-        parenthesis: parenthesis {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
-            label = "parenthesis";
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
@@ -160,15 +97,6 @@
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };
