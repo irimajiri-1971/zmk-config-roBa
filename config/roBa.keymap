@@ -146,3 +146,4 @@
         };
     };
 };
+run: npm ci --legacy-peer-deps --no-audit --progress=false --silent
