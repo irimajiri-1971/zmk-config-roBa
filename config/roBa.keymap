@@ -107,7 +107,7 @@
 
         layer_7 {
             bindings = <
-&kp KP_NUMBER_1  &trans   &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &kp KP_NUMBER_1
+&kp KP_NUMBER_1  &trans   &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &kp N0           &kp ESC  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans           &trans   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans           &trans   &trans  &trans  &trans  &trans      &trans  &trans                          &trans
