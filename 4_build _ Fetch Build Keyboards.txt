@@ -1,0 +1,142 @@
+﻿2025-11-16T06:56:51.4790685Z Current runner version: '2.329.0'
+2025-11-16T06:56:51.4815652Z ##[group]Runner Image Provisioner
+2025-11-16T06:56:51.4816478Z Hosted Compute Agent
+2025-11-16T06:56:51.4817058Z Version: 20251016.436
+2025-11-16T06:56:51.4817655Z Commit: 8ab8ac8bfd662a3739dab9fe09456aba92132568
+2025-11-16T06:56:51.4818385Z Build Date: 2025-10-15T20:44:12Z
+2025-11-16T06:56:51.4818952Z ##[endgroup]
+2025-11-16T06:56:51.4819507Z ##[group]Operating System
+2025-11-16T06:56:51.4820008Z Ubuntu
+2025-11-16T06:56:51.4820566Z 22.04.5
+2025-11-16T06:56:51.4821051Z LTS
+2025-11-16T06:56:51.4821459Z ##[endgroup]
+2025-11-16T06:56:51.4822029Z ##[group]Runner Image
+2025-11-16T06:56:51.4822533Z Image: ubuntu-22.04
+2025-11-16T06:56:51.4823023Z Version: 20251112.150.1
+2025-11-16T06:56:51.4824610Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20251112.150/images/ubuntu/Ubuntu2204-Readme.md
+2025-11-16T06:56:51.4826352Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20251112.150
+2025-11-16T06:56:51.4827432Z ##[endgroup]
+2025-11-16T06:56:51.4828490Z ##[group]GITHUB_TOKEN Permissions
+2025-11-16T06:56:51.4830650Z Contents: read
+2025-11-16T06:56:51.4831167Z Metadata: read
+2025-11-16T06:56:51.4831669Z Packages: read
+2025-11-16T06:56:51.4832209Z ##[endgroup]
+2025-11-16T06:56:51.4834608Z Secret source: Actions
+2025-11-16T06:56:51.4835705Z Prepare workflow directory
+2025-11-16T06:56:51.5173100Z Prepare all required actions
+2025-11-16T06:56:51.5213900Z Getting action download info
+2025-11-16T06:56:51.8099526Z Download action repository 'actions/checkout@v4' (SHA:08eba0b27e820071cde6df949e0beb9ba4906955)
+2025-11-16T06:56:52.0168047Z Uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@refs/heads/main (5138c6fb14783b756c5a3e61581625c700f3555b)
+2025-11-16T06:56:52.0172938Z ##[group] Inputs
+2025-11-16T06:56:52.0173695Z   build_matrix_path: build.yaml
+2025-11-16T06:56:52.0174555Z   config_path: config
+2025-11-16T06:56:52.0175186Z   fallback_binary: bin
+2025-11-16T06:56:52.0175767Z   archive_name: firmware
+2025-11-16T06:56:52.0176270Z ##[endgroup]
+2025-11-16T06:56:52.0176868Z Complete job name: build / Fetch Build Keyboards
+2025-11-16T06:56:52.0971421Z ##[group]Run actions/checkout@v4
+2025-11-16T06:56:52.0972267Z with:
+2025-11-16T06:56:52.0972690Z   repository: kumamuk-git/zmk-config-roBa
+2025-11-16T06:56:52.0973408Z   token: ***
+2025-11-16T06:56:52.0973848Z   ssh-strict: true
+2025-11-16T06:56:52.0974416Z   ssh-user: git
+2025-11-16T06:56:52.0974818Z   persist-credentials: true
+2025-11-16T06:56:52.0975258Z   clean: true
+2025-11-16T06:56:52.0975654Z   sparse-checkout-cone-mode: true
+2025-11-16T06:56:52.0976120Z   fetch-depth: 1
+2025-11-16T06:56:52.0976507Z   fetch-tags: false
+2025-11-16T06:56:52.0976901Z   show-progress: true
+2025-11-16T06:56:52.0977305Z   lfs: false
+2025-11-16T06:56:52.0977676Z   submodules: false
+2025-11-16T06:56:52.0978077Z   set-safe-directory: true
+2025-11-16T06:56:52.0978768Z ##[endgroup]
+2025-11-16T06:56:52.2067987Z Syncing repository: kumamuk-git/zmk-config-roBa
+2025-11-16T06:56:52.2069971Z ##[group]Getting Git version info
+2025-11-16T06:56:52.2070787Z Working directory is '/home/runner/work/zmk-config-roBa/zmk-config-roBa'
+2025-11-16T06:56:52.2071797Z [command]/usr/bin/git version
+2025-11-16T06:56:52.2144612Z git version 2.51.2
+2025-11-16T06:56:52.2170796Z ##[endgroup]
+2025-11-16T06:56:52.2185769Z Temporarily overriding HOME='/home/runner/work/_temp/dc67b417-468f-430e-b91c-1aff29fe9156' before making global git config changes
+2025-11-16T06:56:52.2188095Z Adding repository directory to the temporary git global config as a safe directory
+2025-11-16T06:56:52.2198216Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/zmk-config-roBa/zmk-config-roBa
+2025-11-16T06:56:52.2233411Z Deleting the contents of '/home/runner/work/zmk-config-roBa/zmk-config-roBa'
+2025-11-16T06:56:52.2237191Z ##[group]Initializing the repository
+2025-11-16T06:56:52.2240945Z [command]/usr/bin/git init /home/runner/work/zmk-config-roBa/zmk-config-roBa
+2025-11-16T06:56:52.2347817Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-11-16T06:56:52.2349535Z hint: is subject to change. To configure the initial branch name to use in all
+2025-11-16T06:56:52.2350599Z hint: of your new repositories, which will suppress this warning, call:
+2025-11-16T06:56:52.2351879Z hint:
+2025-11-16T06:56:52.2352704Z hint: 	git config --global init.defaultBranch <name>
+2025-11-16T06:56:52.2353687Z hint:
+2025-11-16T06:56:52.2355084Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-11-16T06:56:52.2357142Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-11-16T06:56:52.2358746Z hint:
+2025-11-16T06:56:52.2359546Z hint: 	git branch -m <name>
+2025-11-16T06:56:52.2360478Z hint:
+2025-11-16T06:56:52.2361453Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2025-11-16T06:56:52.2363261Z Initialized empty Git repository in /home/runner/work/zmk-config-roBa/zmk-config-roBa/.git/
+2025-11-16T06:56:52.2366558Z [command]/usr/bin/git remote add origin https://github.com/kumamuk-git/zmk-config-roBa
+2025-11-16T06:56:52.2400985Z ##[endgroup]
+2025-11-16T06:56:52.2402158Z ##[group]Disabling automatic garbage collection
+2025-11-16T06:56:52.2405889Z [command]/usr/bin/git config --local gc.auto 0
+2025-11-16T06:56:52.2435380Z ##[endgroup]
+2025-11-16T06:56:52.2436539Z ##[group]Setting up auth
+2025-11-16T06:56:52.2442740Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-11-16T06:56:52.2474693Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-11-16T06:56:52.2826125Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-11-16T06:56:52.2855158Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-11-16T06:56:52.3077157Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-11-16T06:56:52.3110824Z ##[endgroup]
+2025-11-16T06:56:52.3111603Z ##[group]Fetching the repository
+2025-11-16T06:56:52.3127766Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +194fc14d4539b4c1a198823e715e10463aa0af00:refs/remotes/origin/main
+2025-11-16T06:56:52.5166247Z From https://github.com/kumamuk-git/zmk-config-roBa
+2025-11-16T06:56:52.5169572Z  * [new ref]         194fc14d4539b4c1a198823e715e10463aa0af00 -> origin/main
+2025-11-16T06:56:52.5201740Z ##[endgroup]
+2025-11-16T06:56:52.5203208Z ##[group]Determining the checkout info
+2025-11-16T06:56:52.5205066Z ##[endgroup]
+2025-11-16T06:56:52.5210631Z [command]/usr/bin/git sparse-checkout disable
+2025-11-16T06:56:52.5255230Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-11-16T06:56:52.5286040Z ##[group]Checking out the ref
+2025-11-16T06:56:52.5290701Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-11-16T06:56:52.5354134Z Switched to a new branch 'main'
+2025-11-16T06:56:52.5359020Z branch 'main' set up to track 'origin/main'.
+2025-11-16T06:56:52.5364433Z ##[endgroup]
+2025-11-16T06:56:52.5402519Z [command]/usr/bin/git log -1 --format=%H
+2025-11-16T06:56:52.5424540Z 194fc14d4539b4c1a198823e715e10463aa0af00
+2025-11-16T06:56:52.5636519Z ##[group]Run echo "build_matrix=$(yq -oj -I0 'build.yaml')" >> $GITHUB_ENV
+2025-11-16T06:56:52.5637571Z [36;1mecho "build_matrix=$(yq -oj -I0 'build.yaml')" >> $GITHUB_ENV[0m
+2025-11-16T06:56:52.5638288Z [36;1myq -oj "build.yaml"[0m
+2025-11-16T06:56:52.5667680Z shell: /usr/bin/bash -e {0}
+2025-11-16T06:56:52.5668214Z ##[endgroup]
+2025-11-16T06:56:53.1672387Z {
+2025-11-16T06:56:53.1673245Z   "include": [
+2025-11-16T06:56:53.1674224Z     {
+2025-11-16T06:56:53.1675014Z       "board": "seeeduino_xiao_ble",
+2025-11-16T06:56:53.1676315Z       "shield": "roBa_R",
+2025-11-16T06:56:53.1677294Z       "snippet": "studio-rpc-usb-uart"
+2025-11-16T06:56:53.1679104Z     },
+2025-11-16T06:56:53.1680242Z     {
+2025-11-16T06:56:53.1681356Z       "board": "seeeduino_xiao_ble",
+2025-11-16T06:56:53.1682792Z       "shield": "roBa_L"
+2025-11-16T06:56:53.1683852Z     },
+2025-11-16T06:56:53.1685277Z     {
+2025-11-16T06:56:53.1686565Z       "board": "seeeduino_xiao_ble",
+2025-11-16T06:56:53.1688482Z       "shield": "settings_reset"
+2025-11-16T06:56:53.1689852Z     }
+2025-11-16T06:56:53.1690890Z   ]
+2025-11-16T06:56:53.1691843Z }
+2025-11-16T06:56:53.1887461Z Post job cleanup.
+2025-11-16T06:56:53.2842010Z [command]/usr/bin/git version
+2025-11-16T06:56:53.2878532Z git version 2.51.2
+2025-11-16T06:56:53.2922738Z Temporarily overriding HOME='/home/runner/work/_temp/e226008d-e2ce-4db1-ab8f-0c4d9e2780be' before making global git config changes
+2025-11-16T06:56:53.2935555Z Adding repository directory to the temporary git global config as a safe directory
+2025-11-16T06:56:53.2938473Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/zmk-config-roBa/zmk-config-roBa
+2025-11-16T06:56:53.2970642Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-11-16T06:56:53.3003128Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-11-16T06:56:53.3231117Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-11-16T06:56:53.3253092Z http.https://github.com/.extraheader
+2025-11-16T06:56:53.3267050Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-11-16T06:56:53.3301571Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-11-16T06:56:53.3643009Z Evaluate and set job outputs
+2025-11-16T06:56:53.3653601Z Set output 'build_matrix'
+2025-11-16T06:56:53.3656959Z Cleaning up orphan processes
